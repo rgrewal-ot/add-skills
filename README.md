@@ -9,6 +9,7 @@ Codex skills from the Techniropa ADD programme. One folder per skill, one `SKILL
 | brainstorming | you want distinct options with trade-offs before deciding |
 | issue-writer | you want a spec section or feature sliced into small issues (GitLab, GitHub, Jira) |
 | compound-doc | you want to keep what a thread taught you, and get proposed `AGENTS.md` lines |
+| explain-change | you want to understand a change before reading its diff: one HTML page with background, the idea, the changes in reading order and a quiz |
 | ramble-to-feature | you talked for five minutes and want a feature description out of it |
 | ramble-to-todo | you talked for five minutes and want a to-do list out of it |
 | mail-formulator | you want an email in your team's tone from rough notes |
