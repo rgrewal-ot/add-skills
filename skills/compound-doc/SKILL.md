@@ -1,15 +1,18 @@
 ---
 name: compound-doc
-description: Use at the end of a task or thread when the user wants to keep what was learned: a decision, a gotcha, a failed approach, a rule that should go into AGENTS.md. Writes a short note into docs/compound/ and proposes AGENTS.md lines without applying them.
+description: Writes down what this thread learned. Use when a piece of work is finished, when something failed, or when I say "it works" or "write down what we learned".
 ---
 
-# compound-doc
+Write one file `docs/compound/YYYY-MM-DD-<topic>.md` (today's date, a short topic slug). Under 50 lines. If a doc on the same topic exists in docs/compound/, update it instead of writing a new one.
 
-Turn what happened in this thread into something the next thread can use.
+Sections, in this order:
+- `## Summary`: two sentences, what the task was and what the outcome is.
+- `## What failed`: the approaches that did not work and why. This is the important section. If nothing failed, say so in one line.
+- `## Decision`: what we chose and the trade-off we accepted.
+- `## Next time`: short imperatives for the next thread ("Check the proxy limit before touching timeouts").
 
-1. Look back over the thread: what was decided, what failed and why, what the user had to correct or repeat.
-2. Write `docs/compound/YYYY-MM-DD-<slug>.md` with: Context (two lines), What we learned (bullets), What to do differently next time (bullets). Under twenty lines.
-3. If a learning should apply to every future thread, propose the exact line(s) for `AGENTS.md` and show them as a diff. Do not edit `AGENTS.md` yourself; the user decides.
-4. Say the file name and stop.
+Then propose, as a diff you do not apply, at most two lines for AGENTS.md: only a rule that would have prevented a repeated mistake in this thread. If no such rule exists, say "No change to AGENTS.md."
 
-Rules: no real or productive data, no secrets; facts only, no praise.
+If AGENTS.md does not yet contain the line "Before you start a task, look in docs/compound/ for a file about the same topic and read it first.", include that line in the proposal: a doc nobody points to is never read.
+
+Rules: write what bit us, not what we built. No secrets, no customer data, no credentials. If something is missing, ask me; do not guess.
